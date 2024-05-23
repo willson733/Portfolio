@@ -1,0 +1,42 @@
+.header {
+  background: #151515 url("../images/intro-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header .text-container {
+  z-index: 10;
+}
+
+.header .roles {
+  font-family: "lora-regular", serif;
+}
+
+.header .social {
+  bottom: 50px;
+}
+
+.about-content .about-image {
+  width: 200px;
+}
+@media only screen and (max-width: 900px) {
+  .header .social {
+    font-size: 1 0px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .profile .profile-button {
+    flex-direction: column;
+  }
+}
