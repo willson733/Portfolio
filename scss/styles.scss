@@ -50,3 +50,23 @@
     flex-direction: column;
   }
 }
+
+.services {
+  background: url("../images/bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.services .text-container {
+  z-index: 11;
+}
